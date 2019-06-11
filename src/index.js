@@ -1,9 +1,21 @@
 import { registerBlockType } from '@wordpress/blocks';
+import edit from './edit';
 
 registerBlockType( 'koke/gif-rnw', {
 	title: 'GIF [RNW]',
 	icon: 'format-image',
-	category: 'embed',
-	edit: () => <div>Hola, mundo!</div>,
-	save: () => <div>Hola, mundo!</div>,
+    category: 'embed',
+    attributes: {
+		caption: {
+			type: 'string',
+		},
+		giphyUrl: {
+			type: 'string',
+		},
+		searchText: {
+			type: 'string',
+		},
+	},
+	edit,
+	save: ( props ) => <iframe src={ props.attributes.giphyUrl}></iframe>,
 } );
