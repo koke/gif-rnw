@@ -1,0 +1,22 @@
+{
+  "name": "gif-rnw",
+  "version": "1.0.0",
+  "description": "A GIF block for Gutenberg, built with React Native Web",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses --production",
+    "lint:css": "wp-scripts lint-style '**/*.css'",
+    "lint:js": "wp-scripts lint-js .",
+    "lint:pkg-json": "wp-scripts lint-pkg-json .",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "author": "koke",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "^3.2.1"
+  }
+}
